@@ -7,5 +7,5 @@ export const logRuntime = async (context: HookContext, next: NextFunction) => {
   await next()
 
   const duration = Date.now() - startTime
-  logger.info(`Calling ${context.method} on ${context.path} took ${duration}ms`)
+  logger.info(`Calling ${context.method} on ${context.path} took ${duration}ms sasa`)
 }
